@@ -14,9 +14,6 @@
               <li>
                 <NuxtLink to="/calculator">Calculator</NuxtLink>
               </li>
-              <li>Calculator</li>
-              <li>Calculator</li>
-              <li>Calculator</li>
             </ul>
           </nav>
         </div>
