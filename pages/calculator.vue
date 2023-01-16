@@ -30,7 +30,7 @@
               <div @click="append('3')" class="btn">3</div>
               <div @click="add" class="btn btn__orange">+</div>
               <div @click="append('0')" class="btn col-span-2">0</div>
-              <div @click="dot" class="btn">.</div>
+              <div @click="decimal" class="btn">.</div>
               <div @click="equal" class="btn btn__orange">=</div>
             </div>
           </div>
@@ -76,7 +76,7 @@ function append(number) {
   current.value = `${current.value}${number}`;
 }
 
-function dot() {
+function decimal() {
   if (current.value.includes(".")) {
     return;
   }
