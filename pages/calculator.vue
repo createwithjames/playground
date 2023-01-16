@@ -58,8 +58,6 @@ function sign() {
 
 function percent() {
   current.value = `${parseFloat(current.value) / 100}`;
-
-  console.log(current.value);
 }
 
 function append(number) {
@@ -68,6 +66,7 @@ function append(number) {
     operatorClicked.value = false;
   }
   current.value = `${current.value}${number}`;
+  console.log(current.value);
 }
 
 function decimal() {
@@ -83,7 +82,7 @@ function setPrevious() {
 }
 
 function divide() {
-  operator.value = (a, b) => a / b;
+  operator.value = (a, b) => b / a;
   setPrevious();
 }
 
@@ -107,6 +106,7 @@ function equal() {
     parseFloat(current.value),
     parseFloat(previous.value)
   )}`;
+  console.log(current.value);
   previous.value = null;
 }
 </script>
