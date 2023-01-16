@@ -15,7 +15,7 @@
                 <NuxtLink to="/calculator">Calculator</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/countdown">Countdown</NuxtLink>
+                <NuxtLink to="/weather">Weather</NuxtLink>
               </li>
             </ul>
           </nav>
