@@ -1,5 +1,5 @@
 <template>
-  <header class="stickyw-full border-b border-slate-900/10">
+  <header class="sticky w-full border-b border-slate-900/10">
     <div class="mx-auto max-w-7xl">
       <div class="py-4 px-8">
         <div class="flex items-center justify-between">
@@ -13,6 +13,9 @@
             <ul class="flex gap-4">
               <li>
                 <NuxtLink to="/calculator">Calculator</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/countdown">Countdown</NuxtLink>
               </li>
             </ul>
           </nav>
