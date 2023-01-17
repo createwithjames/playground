@@ -35,12 +35,19 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 
 const current = ref("");
 const previous = ref("");
 const operator = ref();
 const operatorClicked = ref(false);
+
+const calculatorData = reactive({
+  current: "",
+  previous: "",
+  operator: null,
+  operatorClicked: false,
+});
 
 function clear() {
   current.value = "";
@@ -66,7 +73,6 @@ function append(number) {
     operatorClicked.value = false;
   }
   current.value = `${current.value}${number}`;
-  console.log(current.value);
 }
 
 function decimal() {
@@ -106,7 +112,6 @@ function equal() {
     parseFloat(current.value),
     parseFloat(previous.value)
   )}`;
-  console.log(current.value);
   previous.value = null;
 }
 </script>
