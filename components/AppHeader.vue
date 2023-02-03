@@ -15,7 +15,10 @@
                 <NuxtLink to="/calculator">Calculator</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/weather">Weather</NuxtLink>
+                <NuxtLink to="/weather">Gradient Generator</NuxtLink>
+              </li>
+              <li>
+                <AppDropdown />
               </li>
             </ul>
           </nav>
