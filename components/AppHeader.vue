@@ -9,19 +9,7 @@
               <span>Playground</span>
             </NuxtLink>
           </div>
-          <nav>
-            <ul class="flex gap-4">
-              <li>
-                <NuxtLink to="/calculator">Calculator</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/weather">Gradient Generator</NuxtLink>
-              </li>
-              <li>
-                <AppDropdown />
-              </li>
-            </ul>
-          </nav>
+          <AppDropdown />
         </div>
       </div>
     </div>
