@@ -13,7 +13,7 @@
 import * as THREE from "three";
 
 const data = ref({
-  title: "03 Basic Scene",
+  title: "04 Local Server",
 });
 
 useHead({
