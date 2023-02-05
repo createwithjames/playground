@@ -1,5 +1,7 @@
 <template>
-  <header class="sticky w-full border-b border-slate-900/10">
+  <header
+    class="fixed top-0 w-full border-b border-slate-900/10 bg-white/80 backdrop-blur"
+  >
     <div class="mx-auto max-w-7xl">
       <div class="py-4 px-8">
         <div class="flex items-center justify-between">

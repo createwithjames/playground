@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="bg-zinc-50">
     <AppHeader />
-    <slot />
+    <div class="pt-14">
+      <slot />
+    </div>
   </div>
 </template>
 
