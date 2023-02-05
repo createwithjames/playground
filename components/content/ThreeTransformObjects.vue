@@ -1,17 +1,12 @@
----
-title: "02 Local Server"
-group: "The Basics"
----
+<template>
+  <div>
+    <canvas class="aspect-[4/3] !h-auto !w-full rounded-xl" ref="canvas" />
+  </div>
+</template>
 
-:three-local-server
-
-### The Code
-
-```vue
 <script setup>
 import * as THREE from "three";
 
-// Refs
 const canvas = ref(null);
 
 // Scene
@@ -19,7 +14,7 @@ const scene = new THREE.Scene();
 
 // Red Cube
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0xffee00 });
+const material = new THREE.MeshBasicMaterial({ color: 0xff00ee });
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
@@ -45,4 +40,3 @@ onMounted(() => {
   renderer.render(scene, camera);
 });
 </script>
-```

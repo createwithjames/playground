@@ -1,8 +1,11 @@
 ---
 title: "01 Basic Scene"
 group: "The Basics"
-lessonComponent: "ThreeBasicScene"
 ---
+
+:three-basic-scene
+
+### The Code
 
 ```vue
 <script setup>
