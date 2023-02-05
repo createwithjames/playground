@@ -1,24 +1,12 @@
-<template>
-  <div class="mx-auto max-w-7xl">
-    <div class="px-8">
-      <div class="grid grid-cols-1 gap-4">
-        <h1>{{ data.title }}</h1>
-        <canvas ref="canvas" />
-      </div>
-    </div>
-  </div>
-</template>
+---
+title: "02 Local Server"
+group: "The Basics"
+lessonComponent: "ThreeLocalServer"
+---
 
+```vue
 <script setup>
 import * as THREE from "three";
-
-const data = ref({
-  title: "04 Local Server",
-});
-
-useHead({
-  title: data.value.title,
-});
 
 // Refs
 const canvas = ref(null);
@@ -28,7 +16,7 @@ const scene = new THREE.Scene();
 
 // Red Cube
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+const material = new THREE.MeshBasicMaterial({ color: 0xffee00 });
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
@@ -54,3 +42,4 @@ onMounted(() => {
   renderer.render(scene, camera);
 });
 </script>
+```

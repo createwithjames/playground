@@ -1,26 +1,12 @@
 <template>
-  <div class="mx-auto max-w-7xl">
-    <div class="px-8">
-      <div class="grid grid-cols-1 gap-4">
-        <h1>{{ data.title }}</h1>
-        <canvas ref="canvas" />
-      </div>
-    </div>
+  <div>
+    <canvas class="aspect-[4/3] !h-auto !w-full rounded-xl" ref="canvas" />
   </div>
 </template>
 
 <script setup>
 import * as THREE from "three";
 
-const data = ref({
-  title: "03 Basic Scene",
-});
-
-useHead({
-  title: data.value.title,
-});
-
-// Refs
 const canvas = ref(null);
 
 // Scene
