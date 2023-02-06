@@ -42,7 +42,9 @@ const { data } = await useAsyncData(`content-${route.path}`, () =>
   queryContent().where({ _path: route.path }).findOne()
 );
 
-const nav = await queryContent("threejs", `${route.params.group}`).find();
+const nav = await await queryContent("threejs", `${route.params.group}`)
+  .sort({ title: 1 })
+  .find();
 
 useHead({
   title: data.value.title,
