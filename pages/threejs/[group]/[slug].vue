@@ -8,7 +8,7 @@
               <p
                 class="mb-2 text-sm font-semibold leading-6 text-orange-500 dark:text-orange-400"
               >
-                {{ data.group }}
+                Three.js
               </p>
               <h1
                 class="inline-block text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
