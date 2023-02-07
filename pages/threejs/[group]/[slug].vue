@@ -23,11 +23,20 @@
           />
         </div>
         <div class="col-span-12 md:col-span-4">
-          <h2 class="mb-2 text-sm font-semibold leading-6">The Basics</h2>
-          <div v-for="link in nav">
-            <NuxtLink :to="link._path">
-              {{ link.title }}
-            </NuxtLink>
+          <div
+            class="prose rounded-xl border border-slate-900/10 bg-white p-4 prose-ol:text-sm"
+          >
+            <h2 class="mb-2 text-sm font-semibold leading-6">The Basics</h2>
+            <ol class="-mb-2 text-sm">
+              <li v-for="link in nav">
+                <NuxtLink
+                  :to="link._path"
+                  class="no-underline hover:text-orange-300"
+                >
+                  {{ link.title }}
+                </NuxtLink>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -43,7 +52,7 @@ const { data } = await useAsyncData(`content-${route.path}`, () =>
 );
 
 const nav = await await queryContent("threejs", `${route.params.group}`)
-  .sort({ title: 1 })
+  .sort({ sort: 1 })
   .find();
 
 useHead({

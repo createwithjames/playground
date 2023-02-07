@@ -1,5 +1,6 @@
 ---
-title: "04 Animations"
+title: "Animations"
+sort: "04"
 group: "The Basics"
 ---
 

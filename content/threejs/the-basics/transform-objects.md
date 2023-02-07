@@ -1,5 +1,6 @@
 ---
-title: "03 Transform Objects"
+title: "Transform Objects"
+sort: "03"
 group: "The Basics"
 ---
 

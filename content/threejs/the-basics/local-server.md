@@ -1,5 +1,6 @@
 ---
-title: "02 Local Server"
+title: "Local Server"
+sort: "02"
 group: "The Basics"
 ---
 

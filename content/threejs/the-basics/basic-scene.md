@@ -1,5 +1,6 @@
 ---
-title: "01 Basic Scene"
+title: "Basic Scene"
+sort: "01"
 group: "The Basics"
 ---
 
